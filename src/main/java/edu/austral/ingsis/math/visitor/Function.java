@@ -1,7 +1,5 @@
 package edu.austral.ingsis.math.visitor;
 
 public interface Function {
-
-    class SRoot {
-    }
+    <T> T accept(Visitor<T> visitor);
 }
