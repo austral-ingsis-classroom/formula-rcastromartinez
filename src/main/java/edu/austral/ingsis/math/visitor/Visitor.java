@@ -11,4 +11,5 @@ public interface Visitor<T> {
      T visit(Abs abs);
      T visit(Num num);
      T visit(SRoot sRoot);
+     T visit(Power power);
 }

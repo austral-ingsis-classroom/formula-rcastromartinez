@@ -1,9 +1,9 @@
 package edu.austral.ingsis.math.visitor;
 
 public class Num implements Function {
-    private final double value;
+    private final Double value;
 
-    public Num(double value) {
+    public Num(Double value) {
         this.value = value;
     }
 

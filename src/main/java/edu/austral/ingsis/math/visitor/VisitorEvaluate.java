@@ -55,6 +55,11 @@ public class VisitorEvaluate implements Visitor<Double>{
         return Math.sqrt(sRoot.getFunction().accept(this));
     }
 
+    @Override
+    public Double visit(Power power) {
+        return Math.pow(power.getFunction().accept(this), power.getPower().accept(this));
+    }
+
     public VisitorEvaluate withVariable(Map<String, Double> variables) {
         return new VisitorEvaluate(variables);
     }
