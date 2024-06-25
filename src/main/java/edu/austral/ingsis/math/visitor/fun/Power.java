@@ -4,24 +4,24 @@ import edu.austral.ingsis.math.visitor.Function;
 import edu.austral.ingsis.math.visitor.Visitor;
 
 public class Power implements Function {
-    private final Function function;
-    private final Function power;
+  private final Function function;
+  private final Function power;
 
-    public Power(Function function, Function power) {
-        this.function = function;
-        this.power = power;
-    }
+  public Power(Function function, Function power) {
+    this.function = function;
+    this.power = power;
+  }
 
-    @Override
-    public <T> T accept(Visitor<T> visitor) {
-        return visitor.visit(this);
-    }
+  @Override
+  public <T> T accept(Visitor<T> visitor) {
+    return visitor.visit(this);
+  }
 
-    public Function getFunction() {
-        return function;
-    }
+  public Function getFunction() {
+    return function;
+  }
 
-    public Function getPower() {
-        return power;
-    }
+  public Function getPower() {
+    return power;
+  }
 }

@@ -4,9 +4,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.Matchers.empty;
 
-import java.util.Collections;
-import java.util.List;
-
 import edu.austral.ingsis.math.visitor.Function;
 import edu.austral.ingsis.math.visitor.GetVisitorVariable;
 import edu.austral.ingsis.math.visitor.Num;
@@ -14,6 +11,8 @@ import edu.austral.ingsis.math.visitor.Variable;
 import edu.austral.ingsis.math.visitor.fun.Add;
 import edu.austral.ingsis.math.visitor.fun.Div;
 import edu.austral.ingsis.math.visitor.fun.Multi;
+import java.util.Collections;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 public class ListVariablesTest {
